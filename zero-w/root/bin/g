@@ -1,0 +1,23 @@
+#!/bin/bash
+
+zielverzeichnis="/root/InduktionsLader"
+cmd="python3 main.py"
+
+
+#screens einrichten
+#screen -c screens.conf  -d -m -S cd "$zielverzeichnis"
+screen -t "pythonPrg"  "/root/cdp.sh"
+screen -t "shell"  "ls -l"
+screen -t "mc"  mc
+
+
+#zielverzeichnis wechseln
+
+#cd "$zielverzeichnis" || exit 1
+
+#pwd
+#echo "$cmd"
+#read -p ""
+
+# Ausführen des Befehls nach dem Wechsel
+#eval "$cmd"

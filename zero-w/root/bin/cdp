@@ -1,0 +1,11 @@
+#!/bin/bash
+# file cdp.sh
+
+
+cd /root/InduktionsLader
+ls -l
+# Starte eine interaktive Bash-Shell im aktuellen Verzeichnis
+exec bash
+
+# in .bashrc:
+# alias tails='clear; tail -f -n 25 -s 1 /root/InduktionsLader/logs/batCharge.log '

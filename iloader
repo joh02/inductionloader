@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+#geht nicht:
+#scp root@zero-w:/root/InduktionsLader/logs/batCharge.log  joh@192.168.0.54:/home/joh/temp
+
+ssh root@zero-w "scplog"
+echo logfile in ~/temp aktualisiert
